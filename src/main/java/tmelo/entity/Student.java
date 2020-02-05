@@ -1,4 +1,4 @@
-package net.javaguides.springboot.tutorial.entity;
+package tmelo.entity;
 
 
 import javax.persistence.Column;

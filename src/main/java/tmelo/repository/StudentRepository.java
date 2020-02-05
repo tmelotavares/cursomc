@@ -1,11 +1,11 @@
-package net.javaguides.springboot.tutorial.repository;
+package tmelo.repository;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import net.javaguides.springboot.tutorial.entity.Student;
+import tmelo.entity.Student;
 
 @Repository
 public interface StudentRepository extends CrudRepository<Student, Long> {
