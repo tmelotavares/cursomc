@@ -1,4 +1,4 @@
-package net.javaguides.springboot.tutorial.repository;
+package tmelo.repository;
 
 import java.util.List;
 

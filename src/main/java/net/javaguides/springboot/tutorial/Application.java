@@ -1,4 +1,4 @@
-package tmelo.springboot;
+package net.javaguides.springboot.tutorial;
 
 import org.springframework.boot.SpringApplication;
 
