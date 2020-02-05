@@ -1,4 +1,4 @@
-package net.javaguides.springboot.tutorial.controller;
+package tmelo.springboot.controller;
 
 import javax.validation.Valid;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import net.javaguides.springboot.tutorial.entity.Student;
-import net.javaguides.springboot.tutorial.repository.StudentRepository;
+import tmelo.springboot.entity.Student;
+import tmelo.springboot.repository.StudentRepository;
 
 @Controller
 @RequestMapping("/students/")
@@ -49,7 +49,7 @@ public class StudentController {
 	@GetMapping("edit/{id}")
 	public String showUpdateForm(@PathVariable("id") long id, Model model) {
 		Student student = studentRepository.findById(id)
-				.orElseThrow(() -> new IllegalArgumentException("Invalid student Id:" + id));
+				.orElseThrow(() -> new IllegalArgumentException("Id do Estudante Inválido:" + id));
 		model.addAttribute("student", student);
 		return "update-student";
 	}

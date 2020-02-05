@@ -1,4 +1,4 @@
-package net.javaguides.springboot.tutorial.entity;
+package tmelo.springboot.entity;
 
 
 import javax.persistence.Column;
@@ -15,15 +15,15 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     
-    @NotBlank(message = "Name is mandatory")
+    @NotBlank(message = "Nome obrigatório")
     @Column(name = "name")
     private String name;
     
-    @NotBlank(message = "Email is mandatory")
+    @NotBlank(message = "Email obrigatório")
     @Column(name = "email")
     private String email;
 
-    @Column(name = "phone_no")
+    @Column(name = "telefone")
     private long phoneNo;
     
     public Student() {}

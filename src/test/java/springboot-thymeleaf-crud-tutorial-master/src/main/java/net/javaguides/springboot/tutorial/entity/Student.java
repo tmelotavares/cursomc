@@ -23,7 +23,7 @@ public class Student {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "phone_no")
+    @Column(name = "telefone")
     private long phoneNo;
     
     public Student() {}

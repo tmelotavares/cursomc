@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div class="container my-5">
-	<h3> Update Student</h3>
+	<h3> Alterar Estudante</h3>
 		<div class="card">
 			<div class="card-body">
 				<div class="col-md-8">
@@ -25,9 +25,9 @@
 						th:object="${student}" method="post">
 						<div class="row">
 							<div class="form-group col-md-6">
-								<label for="name" class="col-form-label">Name</label> <input
+								<label for="name" class="col-form-label">Nome</label> <input
 									type="text" th:field="*{name}" class="form-control" id="name"
-									placeholder="Name"> <span
+									placeholder="Nome"> <span
 									th:if="${#fields.hasErrors('name')}" th:errors="*{name}"
 									class="text-danger"></span>
 							</div>
@@ -39,9 +39,9 @@
 									class="text-danger"></span>
 							</div>
 							<div class="form-group col-md-8">
-								<label for="phoneNo" class="col-form-label">Phone No</label> <input
+								<label for="phoneNo" class="col-form-label">Telefone</label> <input
 									type="text" th:field="*{phoneNo}" class="form-control"
-									id="phoneNo" placeholder="phoneNo"> <span
+									id="phoneNo" placeholder="telfone"> <span
 									th:if="${#fields.hasErrors('phoneNo')}" th:errors="phoneNo"
 									class="text-danger"></span>
 							</div>
